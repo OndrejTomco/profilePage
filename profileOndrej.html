@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="profileOndrej.css">
+    <title>My profile page</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Muli|Roboto|Vollkorn+SC|Poppins" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+        <div id = "defaultOpen" class="aboutMe tab" onclick="openTab(event, 'info')">
+            <p>Info about me</p>
+        </div>
+
+        <div class="skills tab" onclick="openTab(event,'skills')">
+            <p>My skills</p>
+        </div>
+        
+        <div class="hobbies tab" onclick="openTab(event, 'hobbies')">
+            <p>My hobbies</p>
+        </div>
+        
+        <div class="social tab">
+            <a href="https://twitter.com/" target="blank"><img src="twitter.png" alt="twitter icon"></a>
+            <a href="https://www.facebook.com" target="blank"><img src="facebook.png" alt="facebook icon"></a>
+            <a href="#"><img src="instagram.png" alt="instagram icon"></a>
+        </div>
+        <hr style="margin-top:40px;">
+    </nav>
+    
+
+    <div id="info" class="tabContent">
+        <div id="profilePhoto">
+        </div>
+
+         <ul id="contactDetails">
+            <li><b>Name</b>: Ondrej Tomčo</li>
+            <li><b>E-mail:</b> ondrej.tomco@akademiasovy.sk</li>
+            <li><b>Phone:</b> +421 555 666</li>
+         </ul>
+
+            <hr style="width:60%;margin: 0 auto; margin-top:20px;" >
+        <p>Hey there! My name is Ondrej Tomčo and I am 21 years old student of Software development academy in Košice, Slovakia.
+            After my secondary school graduation, I went to study English cultures at Presov University, but this route didn't work out
+            for me. In the meantime I have become interested in tech, so I decided to join Global Logic and their education program.
+        </p>
+    </div>
+
+    <div id="skills" class="tabContent">
+        <h1>My Skills</h1>
+        <div class="listWrap">
+            <h3>IT skills</h3>
+            <ul id="itSkillsList">
+                <li>Knowledge of Web languages, HTML, CSS, Javascript</li>
+                <li>Basic knowledge of C programming language</li>
+                <li>Beginner level Linux user</li>
+                <li>Familiar with communication tools like Trello and Slack</li>
+                <li>Version control system Git</li>
+            </ul>
+        </div> 
+        
+        <div class="listWrap">
+            <h3>Other skills</h3>
+            <ul>
+                <li>Ability to work well in a team</li>
+                <li>Responsible approach to given tasks</li>
+                <li>Good Communication and presentation skills</li>
+                <li>Able to adapt to new situations easily</li>
+                <li>Wilingness to learn and research new things</li>
+            </ul>
+         </div>
+    </div>
+
+    <div id="hobbies" class="tabContent">
+        <h1>My Hobbies</h1>
+        
+        <div class="listWrap">
+            <h3>Sport</h3>
+            <ul>
+                <li>Ice hockey (former junior hockey player)</li>
+                <li>Tennis</li>
+                <li>Freestyle football</li>
+            </ul>
+        </div>
+
+        <div class="listWrap">
+            <h3>Volunteering</h3>
+            <ul>
+                <li>Volunteered on eco farm in Slovenian countryside during summer 2017</li>
+                <li>Helped building and maintaining tennis courts in my hometown</li>
+            </ul>
+        </div>
+
+       <div class="listWrap">
+            <h3>Other</h3>
+            <ul>
+                <li>Reading about the newest technology </li>
+                <li>Reading books (psychology, autobiographies)</li>
+                <li>Travelling</li>
+            </ul>
+       </div>
+
+    </div>
+    <script src="profileOndrej.js"></script>
+    
+</body>
+</html>

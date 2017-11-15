@@ -1,0 +1,157 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;
+    
+}
+
+ .tab { 
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 1%;
+    background-color:inherit;
+    color:#16607E;
+    border-color: black;
+    -webkit-box-shadow: 10px 10px 42px -17px rgba(0,0,0,0.75);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+.tab p {
+    padding: 10px;
+}
+
+.social {
+    width: 18%;
+    padding: 5px;
+    border: none;
+    background:inherit;
+    box-shadow: none;
+}
+
+.social > a {
+    margin-right: 15px;
+    vertical-align: middle;
+    
+}
+
+#info {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+#profilePhoto {
+    display: inline-block;
+    background-image: url('me Ondrej.jpg');
+    width: 230px;
+    height: 230px;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center center;
+    border:solid 1px grey;
+}
+
+#info > p {
+    max-width: 60%;
+    margin:0 auto;
+    font-size: 18px;
+    font-family: 'cabin', serif;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+#contactDetails {
+    font-size: 18px;
+    font-family: 'cabin', serif;
+    line-height: 35px;
+    display: inline-block;
+    margin-left:50px;
+    margin-top: 60px;
+    vertical-align: top;
+}
+
+#contactDetails > li {
+    text-align: left;
+}
+
+#skills {
+    margin-top:50px;
+    max-width: 60%;
+    margin:0 auto;
+    font-size: 18px;
+    font-family: 'cabin', serif;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+#hobbies {
+    margin-top:50px;
+    max-width: 60%;
+    margin:0 auto;
+    font-size: 18px;
+    font-family: 'cabin', serif;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-top:8px;
+}
+
+.tabContent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+.listWrap {
+    margin-top: 30px;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} */
+
+.active {
+    background-color:#16607E;
+    color: white;
+    border-radius:5px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@media(max-width:940px) {
+    .tab {
+        width: 100%;
+        font-size:19px;
+    }
+    #profilePhoto {
+        width: 180px;
+        height: 180px;
+    }
+    .social {
+        padding-top: 25px;
+        margin-bottom: -25px;
+        
+    }
+}
